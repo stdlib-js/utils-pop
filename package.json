@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/utils-pop",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Remove and return the last element of a collection.",
   "license": "Apache-2.0",
   "author": {
