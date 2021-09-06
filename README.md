@@ -148,6 +148,14 @@ console.log( arr );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/push`][@stdlib/utils/push]: add one or more elements to the end of a collection.
+-   [`@stdlib/utils/shift`][@stdlib/utils/shift]: remove and return the first element of a collection.
+-   [`@stdlib/utils/unshift`][@stdlib/utils/unshift]: add one or more elements to the beginning of a collection.
+
 </section>
 
 <!-- /.related -->
@@ -218,6 +226,16 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [mdn-arraybuffer]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer
 
 [mdn-object]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+<!-- <related-links> -->
+
+[@stdlib/utils/push]: https://github.com/stdlib-js/utils-push
+
+[@stdlib/utils/shift]: https://github.com/stdlib-js/utils-shift
+
+[@stdlib/utils/unshift]: https://github.com/stdlib-js/utils-unshift
+
+<!-- </related-links> -->
 
 </section>
 
