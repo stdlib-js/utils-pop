@@ -34,30 +34,14 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/utils-pop
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var pop = require( '@stdlib/utils-pop' );
+import pop from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-pop@deno/mod.js';
 ```
 
 #### pop( collection )
@@ -80,7 +64,7 @@ var lastValue = out[ 1 ];
 In contrast to [`Array.prototype.pop`][mdn-array-pop] which returns only the removed element, the function also returns the shortened collection. For [typed arrays][mdn-typed-array] having a length greater than `0`, the returned collection is a new [typed array][mdn-typed-array] view.
 
 ```javascript
-var Float64Array = require( '@stdlib/array-float64' );
+import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
 
 var arr = new Float64Array( 2 );
 arr[ 0 ] = 1.0;
@@ -124,8 +108,8 @@ var lastValue = out[ 1 ];
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Float64Array = require( '@stdlib/array-float64' );
-var pop = require( '@stdlib/utils-pop' );
+import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
+import pop from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-pop@deno/mod.js';
 
 var arr;
 var out;
@@ -177,7 +161,7 @@ console.log( arr );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -249,11 +233,11 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/utils/push]: https://github.com/stdlib-js/utils-push
+[@stdlib/utils/push]: https://github.com/stdlib-js/utils-push/tree/deno
 
-[@stdlib/utils/shift]: https://github.com/stdlib-js/utils-shift
+[@stdlib/utils/shift]: https://github.com/stdlib-js/utils-shift/tree/deno
 
-[@stdlib/utils/unshift]: https://github.com/stdlib-js/utils-unshift
+[@stdlib/utils/unshift]: https://github.com/stdlib-js/utils-unshift/tree/deno
 
 <!-- </related-links> -->
 
