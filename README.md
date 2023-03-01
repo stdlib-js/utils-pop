@@ -34,38 +34,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-pop
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-pop = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-pop@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var pop = require( 'path/to/vendor/umd/utils-pop/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-pop@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.pop;
-})();
-</script>
+var pop = require( '@stdlib/utils-pop' );
 ```
 
 #### pop( collection )
@@ -131,14 +123,9 @@ var lastValue = out[ 1 ];
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-pop@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var Float64Array = require( '@stdlib/array-float64' );
+var pop = require( '@stdlib/utils-pop' );
 
 var arr;
 var out;
@@ -151,11 +138,6 @@ for ( i = 0; i < 100; i++ ) {
     console.log( 'Length: %d', arr.length );
 }
 console.log( arr );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -178,9 +160,9 @@ console.log( arr );
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/utils/push`][@stdlib/utils/push]</span><span class="delimiter">: </span><span class="description">add one or more elements to the end of a collection.</span>
--   <span class="package-name">[`@stdlib/utils/shift`][@stdlib/utils/shift]</span><span class="delimiter">: </span><span class="description">remove and return the first element of a collection.</span>
--   <span class="package-name">[`@stdlib/utils/unshift`][@stdlib/utils/unshift]</span><span class="delimiter">: </span><span class="description">add one or more elements to the beginning of a collection.</span>
+-   <span class="package-name">[`@stdlib/utils-push`][@stdlib/utils/push]</span><span class="delimiter">: </span><span class="description">add one or more elements to the end of a collection.</span>
+-   <span class="package-name">[`@stdlib/utils-shift`][@stdlib/utils/shift]</span><span class="delimiter">: </span><span class="description">remove and return the first element of a collection.</span>
+-   <span class="package-name">[`@stdlib/utils-unshift`][@stdlib/utils/unshift]</span><span class="delimiter">: </span><span class="description">add one or more elements to the beginning of a collection.</span>
 
 </section>
 
@@ -267,11 +249,11 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/utils/push]: https://github.com/stdlib-js/utils-push/tree/umd
+[@stdlib/utils/push]: https://github.com/stdlib-js/utils-push
 
-[@stdlib/utils/shift]: https://github.com/stdlib-js/utils-shift/tree/umd
+[@stdlib/utils/shift]: https://github.com/stdlib-js/utils-shift
 
-[@stdlib/utils/unshift]: https://github.com/stdlib-js/utils-unshift/tree/umd
+[@stdlib/utils/unshift]: https://github.com/stdlib-js/utils-unshift
 
 <!-- </related-links> -->
 
