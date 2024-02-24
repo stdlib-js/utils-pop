@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import pop from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-pop@deno/mod.js';
+import pop from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-pop@v0.2.1-deno/mod.js';
 ```
 
 #### pop( collection )
@@ -120,7 +120,7 @@ var lastValue = out[ 1 ];
 
 ```javascript
 import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
-import pop from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-pop@deno/mod.js';
+import pop from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-pop@v0.2.1-deno/mod.js';
 
 var arr;
 var out;
